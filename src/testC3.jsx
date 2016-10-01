@@ -6,69 +6,124 @@ import G3 from '../data/G3.js';
 const ReactHighcharts = require('react-highcharts');
 
 var data = parser(G3());
-console.log(data);
+var dataArray =[[],[],[],[],[],[]];
+
+var dateArray =[];
+
+
+data.forEach((obj) => {
+  if(obj.summary === 'army'){
+    dataArray[0].push(obj.hours)
+  } else if (obj.summary === 'supporters'){
+    dataArray[1].push(obj.hours)
+  } else if(obj.summary === 'nato'){
+    dataArray[2].push(obj.hours)
+  } else if(obj.summary === 'joint'){
+    dataArray[3].push(obj.hours)
+  } else if(obj.summary === 'staff'){
+    dataArray[4].push(obj.hours)
+  } else if(obj.summary === 'allies'){
+    dataArray[5].push(obj.hours)
+  }
+})
+
+data.forEach((obj) => {
+  if(dateArray.indexOf(obj.date) < 0){
+  dateArray.push(obj.date)
+  }
+})
+dateArray.sort();
+
+let largest = 0;
+dataArray.forEach((item) => {
+  if(item.length > largest){
+    largest = item.length;
+  }
+})
+
+
+for(var i = 0; dataArray[1].length !== largest; i++) {
+
+  if(Math.random() > 0.25) {
+    dataArray[1].splice(Math.floor(Math.random() * dataArray[1].length) + 1, 0, 0);
+  }
+}
+for(var i = 0; dataArray[2].length !== largest; i++) {
+
+  if(Math.random() > 0.25) {
+    dataArray[2].splice(Math.floor(Math.random() * dataArray[2].length) + 1, 0, 0);
+  }
+}
+for(var i = 0; dataArray[3].length !== largest; i++) {
+
+  if(Math.random() > 0.25) {
+    dataArray[3].splice(Math.floor(Math.random() * dataArray[3].length) + 1, 0, 0);
+  }
+}
+for(var i = 0; dataArray[4].length !== largest; i++) {
+
+  if(Math.random() > 0.25) {
+    dataArray[4].splice(Math.floor(Math.random() * dataArray[4].length) + 1, 0, 0);
+  }
+}
+for(var i = 0; dataArray[5].length !== largest; i++) {
+
+  if(Math.random() > 0.25) {
+    dataArray[5].splice(Math.floor(Math.random() * dataArray[5].length) + 1, 0, 0);
+  }
+}
  const config = {
-  title: {
-            text: 'Combination chart'
+  chart: {
+            type: 'Combination chart'
+        },
+        title: {
+            text: 'Hours spent at events sorted by date'
+        },
+        subtitle: {
+            text: 'Filter event types by clicking legend at the bottom'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
+            categories: dateArray
         },
-        labels: {
-            items: [{
-                html: 'Total fruit consumption',
-                style: {
-                    left: '50px',
-                    top: '18px',
-                    // color: (ReactHighcharts.theme && ReactHighcharts.theme.textColor) || 'blue'
-                }
-            }]
+        yAxis: {
+            title: {
+                text: 'Hours'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
         },
         series: [{
             type: 'column',
-            name: 'Jane',
-            data: [3, 2, 1, 3, 4]
+            name: 'Army',
+            data: dataArray[0]
         }, {
             type: 'column',
-            name: 'John',
-            data: [2, 3, 5, 7, 6]
+            name: 'Supporters',
+            data: dataArray[1]
+        },{
+          type: 'column',
+          name: 'NATO',
+          data: dataArray[2]
         }, {
-            type: 'column',
-            name: 'Joe',
-            data: [4, 3, 3, 9, 0]
+          type: 'column',
+          name: 'Joint',
+          data: dataArray[3]
         }, {
-            type: 'spline',
-            name: 'Average',
-            data: [3, 2.67, 3, 6.33, 3.33],
-            marker: {
-                lineWidth: 2,
-                lineColor: 'pink',
-                fillColor: 'white'
-            }
+          type: 'column',
+          name: 'Staff',
+          data: dataArray[4]
         }, {
-            type: 'pie',
-            name: 'Total consumption',
-            data: [{
-                name: 'Jane',
-                y: 13,
-                // color: ReactHighcharts.getOptions().colors[0] // Jane's color
-            }, {
-                name: 'John',
-                y: 23,
-                // color: ReactHighcharts.getOptions().colors[1] // John's color
-            }, {
-                name: 'Joe',
-                y: 19,
-                // color: ReactHighcharts.getOptions().colors[2] // Joe's color
-            }],
-            center: [100, 80],
-            size: 100,
-            showInLegend: false,
-            dataLabels: {
-                enabled: false
-            }
+          type: 'column',
+          name: 'Allies',
+          data: dataArray[5]
         }]
-      }
+    }
 
 class TestComponent extends React.Component {
   render() {

@@ -64,8 +64,8 @@ class App extends Component {
               <MenuItem eventKey={"All"} ref="time2">All</MenuItem>
             </DropdownButton>
           </div>
+          <TestChart />
           </ReactCSSTransitionGroup>
-        <TestChart />
         </div>
       </div>
     );
