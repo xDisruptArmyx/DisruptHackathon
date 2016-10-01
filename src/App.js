@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import { Button, Navbar, PageHeader, DropdownButton, MenuItem } from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TestChart from './testC3.jsx';
-import TestChart2 from './donut.jsx';
+import TestChart2 from './donut_DCGS.jsx';
+import TestChart3 from './donut_DCGNG.jsx';
+import TestChart4 from './donut_G3.jsx';
+import TestChart5 from './donut_DCGN.jsx';
+import TestChart6 from './donut_DCGAR.jsx';
+import TestChart7 from './donut_COS.jsx';
+import TestChart8 from './donut_CG.jsx';
 
 import logo from './logo.svg';
 import './App.css';
@@ -68,6 +74,12 @@ class App extends Component {
           </ReactCSSTransitionGroup>
         <TestChart />
         <TestChart2 />
+        <TestChart3 />
+        <TestChart4 />
+        <TestChart5 />
+        <TestChart6 />
+        <TestChart7 />
+        <TestChart8 />
         </div>
       </div>
     );
