@@ -1,9 +1,11 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
+import parser from './script.js';
+import G3 from '../data/G3.js';
 
 const ReactHighcharts = require('react-highcharts');
 
-var data = parser(G3);
+var data = parser(G3());
 console.log(data);
  const config = {
   title: {

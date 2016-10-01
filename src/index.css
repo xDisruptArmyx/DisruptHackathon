@@ -41,3 +41,23 @@ body {
   opacity: 1;
   transition: opacity 2s ease-in;
 }
+
+#particles-js{
+  position: fixed;
+}
+
+#root{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.react_content_container{
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+  opacity: .9;
+  margin-top: 2%;
+}

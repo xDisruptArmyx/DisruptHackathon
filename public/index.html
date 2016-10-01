@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script type="text/javascript" src="./../data/CG.js"></script>
+<!--   <script type="text/javascript" src="./../data/CG.js"></script>
   <script type="text/javascript" src="./../data/COS.js"></script>
   <script type="text/javascript" src="./../data/DCGAR.js"></script>
   <script type="text/javascript" src="./../data/DCGN.js"></script>
   <script type="text/javascript" src="./../data/DCGNG.js"></script>
   <script type="text/javascript" src="./../data/DCGS.js"></script>
   <script type="text/javascript" src="./../data/G3.js"></script>
+  <script type="text/javascript" src="./../src/script.js"></script> -->
   <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
   <title>Disrupt Army</title>
@@ -16,7 +17,6 @@
 </head>
 <body>
   <div id="particles-js">
-  <script type="text/javascript" src="./../src/script.js"></script>
 
   <script type="text/javascript" src="./particles.js"></script>
   <script type="text/javascript">
@@ -51,6 +51,52 @@
     width: 100%;
   }
   </style>
+<!--     <script type="text/javascript" src="./../data/CG.js"></script>
+    <script type="text/javascript" src="./../data/COS.js"></script>
+    <script type="text/javascript" src="./../data/DCGAR.js"></script>
+    <script type="text/javascript" src="./../data/DCGN.js"></script>
+    <script type="text/javascript" src="./../data/DCGNG.js"></script>
+    <script type="text/javascript" src="./../data/DCGS.js"></script>
+    <script type="text/javascript" src="./../data/G3.js"></script>
+    <!-- Parser -->
+<!--     <script type="text/javascript" src="./../src/script.js"></script> -->
+
+    <script type="text/javascript" src="./particles.js"></script>
+    <script type="text/javascript">
+      particlesJS.load('particles-js', './particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+    <script type="text/javascript" src="./app.js"></script>
+<!--     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+    <style>
+    body {
+      height: 100%;
+      width: 100%;
+      x-overflow: hidden;
+      margin: 0px;
+    }
+    #particles-js {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      background-color: grey;
+      background-image: url('');
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    #landingText {
+      position: absolute;
+      font-size: 16px;
+      color: #333;
+      top: 50%;
+      left: 0;
+      width: 100%;
+    }
+    </style>
+  </div>
   <div id="root"></div>
 </body>
 </html>

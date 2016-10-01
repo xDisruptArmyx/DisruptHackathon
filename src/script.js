@@ -1,5 +1,5 @@
 
-function parser(data) {
+const parser = function (data) {
   const items = data.items;
 
   const array = [];
@@ -34,3 +34,4 @@ function parser(data) {
   return array;
 }
 
+export default parser;
