@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "react-c3",
+      "/Users/Vince/Desktop/disrput-army/Disrput-Hackathon"
+    ]
+  ],
+  "_from": "react-c3@latest",
+  "_id": "react-c3@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-c3",
+  "_nodeVersion": "1.1.0",
+  "_npmUser": {
+    "email": "kirill@kcherkashin.org",
+    "name": "kirjs"
+  },
+  "_npmVersion": "2.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-c3",
+    "raw": "react-c3",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-c3/-/react-c3-1.0.0.tgz",
+  "_shasum": "ce9def35700712e5e2687a10d1812297b3bce2db",
+  "_shrinkwrap": null,
+  "_spec": "react-c3",
+  "_where": "/Users/Vince/Desktop/disrput-army/Disrput-Hackathon",
+  "author": "",
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "ce9def35700712e5e2687a10d1812297b3bce2db",
+    "tarball": "https://registry.npmjs.org/react-c3/-/react-c3-1.0.0.tgz"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "kirill@kcherkashin.org",
+      "name": "kirjs"
+    }
+  ],
+  "name": "react-c3",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

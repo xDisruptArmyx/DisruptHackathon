@@ -66,7 +66,6 @@ class App extends Component {
           </DropdownButton>
         </div>
         </ReactCSSTransitionGroup>
-        <TestChart />
       </div>
     );
   }
