@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Navbar, PageHeader, DropdownButton, MenuItem } from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import TestChart from './testC3.jsx';
 
+import TestComponent from './testC3.jsx';
 import TestChart2 from './donut_DCGS.jsx';
 import TestChart3 from './donut_DCGNG.jsx';
 import TestChart4 from './donut_G3.jsx';
@@ -35,6 +35,7 @@ class App extends Component {
     this.onSelectTime = this.onSelectTime.bind(this);
     this.filter = this.filter.bind(this);
     this.initialLoad = this.initialLoad.bind(this);
+    this.renderMattChart = this.renderMattChart.bind(this);
     this.state = {
       selectedPerson: 'Select Person',
       selectedChart: 'Select Chart',
@@ -42,6 +43,7 @@ class App extends Component {
       renderChart: false,
       renderDonut: false,
       firstLoad: true,
+      mattChart: false,
     }
   }
 
@@ -59,7 +61,11 @@ class App extends Component {
 
   filter(){
     let data;
-    if(this.state.selectedChart === 'donut') {
+    if(this.state.selectedChart === 'pie'){
+      this.setState({ mattChart: true });
+      this.setState({ renderDonut: false });
+      this.setState({ renderChart: false});
+    } else if(this.state.selectedChart === 'donut') {
       if(this.state.selectedPerson === 'CG') {
         data = CG();
       } else if(this.state.selectedPerson === 'COS'){
@@ -81,6 +87,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: false });
       this.setState({ renderDonut: true });
+      this.setState({ mattChart: false });
+
     }
     else if(this.state.selectedPerson === 'CG'){
       data = CG();
@@ -90,6 +98,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'COS'){
       data = COS();
       let firstParse = parser(data);
@@ -98,6 +108,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-AR'){
       data = DCGAR();
       let firstParse = parser(data);
@@ -106,6 +118,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-N'){
       data = DCGN();
       let firstParse = parser(data);
@@ -114,6 +128,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-NG'){
       data = DCGNG();
       let firstParse = parser(data);
@@ -122,6 +138,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'G3'){
       data = G3();
       let firstParse = parser(data);
@@ -130,6 +148,8 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-S'){
       data = DCGS();
       let firstParse = parser(data);
@@ -138,6 +158,28 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
+    }
+  }
+
+  renderMattChart(){
+    this.setState({ renderChart: false });
+    this.setState({ renderDonut: false });
+    if(this.state.selectedPerson === 'CG'){
+      return <TestChart8 />
+    } else if(this.state.selectedPerson ==='COS'){
+      return <TestChart7 />
+    } else if(this.state.selectedPerson === 'DCG-AR') {
+      return <TestChart6 />
+    } else if(this.state.selectedPerson === 'DCG-N') {
+      return <TestChart5 />
+    } else if(this.state.selectedPerson === 'DCG-NG') {
+      return <TestChart3 />
+    } else if(this.state.selectedPerson === 'DCG-S') {
+      return <TestChart2 />
+    } else if(this.state.selectedPerson === 'G3') {
+      return <TestChart4 />
     }
   }
 
@@ -148,7 +190,7 @@ class App extends Component {
     let parsedData = dataParser(firstParse);
     console.log(parsedData, 'parsedData')
     return(
-      <TestChart data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
+      <TestComponent data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
     )
   }
 
@@ -162,7 +204,7 @@ class App extends Component {
                   transitionAppear={true}
                   transitionAppearTimeout={5000}>
           <div className="App-header">
-            <h1 id="title">Disrupt Army Analytics</h1>
+            <h2 id="title">Disrupt Army Analytics</h2>
             <DropdownButton title={this.state.selectedPerson} onSelect={this.onSelectPerson} id="1337">
               <MenuItem eventKey={'CG'} ref="dude1">CG</MenuItem>
               <MenuItem eventKey={'COS'} ref="dude2">COS</MenuItem>
@@ -176,12 +218,13 @@ class App extends Component {
               <MenuItem eventKey={"bar"} ref="event1">Bar</MenuItem>
               <MenuItem eventKey={"line"} ref="event1">Line</MenuItem>
               <MenuItem eventKey={"donut"} ref="event1">Donut</MenuItem>
+              <MenuItem eventKey={"pie"} ref="event1">Pie</MenuItem>
             </DropdownButton>
             <Button bsStyle="info" onClick={this.filter}>Filter</Button>
           </div>
           <div>
           { this.state.renderChart ?
-            <TestChart data={this.state.data.dataArray} date={this.state.data.dateArray} chart={this.state.selectedChart}/>
+            <TestComponent data={this.state.data.dataArray} date={this.state.data.dateArray} chart={this.state.selectedChart}/>
             : null
           }
           </div>
@@ -198,15 +241,13 @@ class App extends Component {
               : null
             }
           </div>
+          <div>
+            {this.state.mattChart ?
+              this.renderMattChart()
+              : null
+            }
+          </div>
           </ReactCSSTransitionGroup>
-        <TestChart />
-        <TestChart2 />
-        <TestChart3 />
-        <TestChart4 />
-        <TestChart5 />
-        <TestChart6 />
-        <TestChart7 />
-        <TestChart8 />
         </div>
       </div>
     );

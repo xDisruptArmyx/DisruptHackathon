@@ -101,12 +101,9 @@ class DonutChart extends React.Component {
         title: {
             text: "Visualization of individual's scheduled hours"
         },
-        subtitle: {
-            text: 'Source: <a href="http://netmarketshare.com/">netmarketshare.com</a>'
-        },
+
         yAxis: {
             title: {
-                text: 'Total percent market share'
             }
         },
         plotOptions: {
