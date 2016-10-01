@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
 import { Button, Navbar, PageHeader, DropdownButton, MenuItem } from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import TestChart from './testC3.jsx';
+
+import TestComponent from './testC3.jsx';
+import TestChart2 from './donut_DCGS.jsx';
+import TestChart3 from './donut_DCGNG.jsx';
+import TestChart4 from './donut_G3.jsx';
+import TestChart5 from './donut_DCGN.jsx';
+import TestChart6 from './donut_DCGAR.jsx';
+import TestChart7 from './donut_COS.jsx';
+import TestChart8 from './donut_CG.jsx';
+
 import parser from './script.js';
 import CG from '../data/CG.js';
 import G3 from '../data/G3.js';
@@ -26,6 +35,7 @@ class App extends Component {
     this.onSelectTime = this.onSelectTime.bind(this);
     this.filter = this.filter.bind(this);
     this.initialLoad = this.initialLoad.bind(this);
+    this.renderMattChart = this.renderMattChart.bind(this);
     this.state = {
       selectedPerson: 'Select Person',
       selectedChart: 'Select Chart',
@@ -33,6 +43,7 @@ class App extends Component {
       renderChart: false,
       renderDonut: false,
       firstLoad: true,
+      mattChart: false,
     }
   }
 
@@ -50,21 +61,24 @@ class App extends Component {
 
   filter(){
     let data;
-    if(this.state.selectedChart === 'donut') {
+    if(this.state.selectedChart === 'pie'){
+
+      this.setState({ mattChart: true });
+    } else if(this.state.selectedChart === 'donut') {
       if(this.state.selectedPerson === 'CG') {
-        data = CG;
+        data = CG();
       } else if(this.state.selectedPerson === 'COS'){
-      data = COS;
+      data = COS();
       } else if(this.state.selectedPerson === 'DCG-AR'){
-        data = DCGAR;
+        data = DCGAR();
       } else if(this.state.selectedPerson === 'DCG-N'){
-      data = DCGN;
+      data = DCGN();
       } else if(this.state.selectedPerson === 'DCG-NG'){
-        data = DCGNG;
+        data = DCGNG();
       } else if(this.state.selectedPerson === 'G3'){
         data = G3();
       } else if(this.state.selectedPerson === 'DCG-S'){
-        data = DCGS;
+        data = DCGS();
       }
       let firstParse = parser(data);
       let parsedDonutData = donutParser(firstParse);
@@ -72,47 +86,59 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: false });
       this.setState({ renderDonut: true });
+      this.setState({ mattChart: false });
+
     }
     else if(this.state.selectedPerson === 'CG'){
-      data = CG;
+      data = CG();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'COS'){
-      data = COS;
+      data = COS();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-AR'){
-      data = DCGAR;
+      data = DCGAR();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-N'){
-      data = DCGN;
+      data = DCGN();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-NG'){
-      data = DCGNG;
+      data = DCGNG();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'G3'){
       data = G3();
       let firstParse = parser(data);
@@ -121,30 +147,56 @@ class App extends Component {
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     } else if(this.state.selectedPerson === 'DCG-S'){
-      data = DCGS;
+      data = DCGS();
       let firstParse = parser(data);
       let parsedData = dataParser(firstParse);
       this.setState({ data: parsedData });
       this.setState({ firstLoad: false });
       this.setState({ renderChart: true });
       this.setState({ renderDonut: false });
+      this.setState({ mattChart: false });
+
     }
   }
 
+  renderMattChart(){
+    // let mattDiv = document.getElementById('mattDiv');
+
+    if(this.state.selectedPerson === 'CG'){
+      // this.setState({firstLoad: false})
+      // this.setState({ renderChart: false });
+      // this.setState({ renderDonut: false });
+      // this.setState({ renderDonut: false });
+      return (<TestChart8 />)
+    } else if(this.state.selectedPerson ==='COS'){
+      // return (<TestChart7 />)
+    } else if(this.state.selectedPerson === 'DCG-AR') {
+      // return (<TestChart6 />)
+    } else if(this.state.selectedPerson === 'DCG-N') {
+      // return <TestChart5 />
+    } else if(this.state.selectedPerson === 'DCG-NG') {
+      // return <TestChart3 />
+    } else if(this.state.selectedPerson === 'DCG-S') {
+      // return <TestChart2 />
+    } else if(this.state.selectedPerson === 'G3') {
+      // return <TestChart4 />
+    }
+
+   }
+
 
   initialLoad(){
-    let firstParse = parser(COS);
-    console.log(firstParse, 'first parse')
+    let firstParse = parser(COS());
     let parsedData = dataParser(firstParse);
-    console.log(parsedData, 'parsedData')
     return(
-      <TestChart data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
+      <TestComponent data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
     )
   }
 
   render() {
-    console.log(this.state.renderDonut)
     return (
       <div className="App container">
         <div className="react_content_container">
@@ -153,7 +205,7 @@ class App extends Component {
                   transitionAppear={true}
                   transitionAppearTimeout={5000}>
           <div className="App-header">
-            <h1 id="title">Disrupt Army Analytics</h1>
+            <h2 id="title">Disrupt Army Analytics</h2>
             <DropdownButton title={this.state.selectedPerson} onSelect={this.onSelectPerson} id="1337">
               <MenuItem eventKey={'CG'} ref="dude1">CG</MenuItem>
               <MenuItem eventKey={'COS'} ref="dude2">COS</MenuItem>
@@ -172,7 +224,7 @@ class App extends Component {
           </div>
           <div>
           { this.state.renderChart ?
-            <TestChart data={this.state.data.dataArray} date={this.state.data.dateArray} chart={this.state.selectedChart}/>
+            <TestComponent data={this.state.data.dataArray} date={this.state.data.dateArray} chart={this.state.selectedChart}/>
             : null
           }
           </div>
@@ -186,6 +238,12 @@ class App extends Component {
           <div>
             {this.state.firstLoad ?
               this.initialLoad()
+              : null
+            }
+          </div>
+          <div>
+            {this.state.mattChart ?
+              this.renderMattChart()
               : null
             }
           </div>
