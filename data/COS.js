@@ -1,4 +1,4 @@
-{
+const COS = {
   "accessRole": "reader",
   "defaultReminders": [],
   "description": "personal calendar",

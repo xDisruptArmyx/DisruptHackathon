@@ -1,4 +1,4 @@
-{
+const G3 = {
   "accessRole": "reader",
   "defaultReminders": [],
   "description": "personal calendar",

@@ -1,4 +1,4 @@
-{
+const DCGAR = {
   "accessRole": "reader",
   "defaultReminders": [],
   "description": "personal calendar",

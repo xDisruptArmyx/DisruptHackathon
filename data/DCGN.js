@@ -1,4 +1,4 @@
-{
+const DCGN = {
   "accessRole": "reader",
   "defaultReminders": [],
   "description": "personal calendar",

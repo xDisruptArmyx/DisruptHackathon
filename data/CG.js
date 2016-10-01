@@ -1,5 +1,5 @@
-{
-  "accessRole": "reader",
+const CG = {
+  "cccessRole": "reader",
   "defaultReminders": [],
   "description": "personal calendar",
   "etag": "\"p330875e4uqqsu0g\"",
