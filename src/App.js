@@ -67,10 +67,9 @@ class App extends Component {
         data = DCGS;
       }
       let firstParse = parser(data);
-      let parsedData = dataParser(firstParse);
-      let parsedDonutData = donutParser(parsedData.dataArray);
+      let parsedDonutData = donutParser(firstParse);
       this.setState({ data: {donutData: parsedDonutData} });
-      this.setState({ initialLoad: false });
+      this.setState({ firstLoad: false });
       this.setState({ renderChart: false });
       this.setState({ renderDonut: true });
     }
@@ -154,6 +153,7 @@ class App extends Component {
                   transitionAppear={true}
                   transitionAppearTimeout={5000}>
           <div className="App-header">
+            <h1 id="title">Disrupt Army Analytics</h1>
             <DropdownButton title={this.state.selectedPerson} onSelect={this.onSelectPerson} id="1337">
               <MenuItem eventKey={'CG'} ref="dude1">CG</MenuItem>
               <MenuItem eventKey={'COS'} ref="dude2">COS</MenuItem>
@@ -164,12 +164,9 @@ class App extends Component {
               <MenuItem eventKey={'G3'} ref="dude7">G3</MenuItem>
             </DropdownButton>
             <DropdownButton title={this.state.selectedChart} onSelect={this.onSelectChart} id="137">
-              <MenuItem eventKey={"donut"} ref="event1">Donut</MenuItem>
               <MenuItem eventKey={"bar"} ref="event1">Bar</MenuItem>
               <MenuItem eventKey={"line"} ref="event1">Line</MenuItem>
-              <MenuItem eventKey={"Columnrange"} ref="event1">Column Rage</MenuItem>
-              <MenuItem eventKey={"Combination chart"} ref="event1">Combination Chart</MenuItem>
-              <MenuItem eventKey={"Bubble"} ref="event1">Bubble</MenuItem>
+              <MenuItem eventKey={"donut"} ref="event1">Donut</MenuItem>
             </DropdownButton>
             <Button bsStyle="info" onClick={this.filter}>Filter</Button>
           </div>

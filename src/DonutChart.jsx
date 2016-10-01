@@ -5,64 +5,62 @@ const Highcharts = require('highcharts');
 
 class DonutChart extends React.Component {
   render() {
-  console.log(this.props.data)
+    let total = 0;
  var colors = Highcharts.getOptions().colors,
-        categories = ['MSIE', 'Firefox', 'Chrome', 'Safari', 'Opera'],
+        categories = ['Army', 'Supporters', 'Joint', 'Staff', 'Allies'],
         data = [{
-            y: 56.33,
-            color: colors[0],
+            y: Math.random() * 13 + 1,
+            color: 'dark green',
             drilldown: {
-                name: 'MSIE versions',
-                categories: ['MSIE 6.0', 'MSIE 7.0', 'MSIE 8.0', 'MSIE 9.0', 'MSIE 10.0', 'MSIE 11.0'],
-                data: this.props.data[0],
-                color: colors[0]
+                name: 'Army',
+                categories: ['Army'],
+                data: this.props.data[0].sort(),
+                color: 'dark green'
             }
         }, {
-            y: 10.38,
-            color: colors[1],
+            y: Math.random() * 13 + 1,
+            color: 'red',
             drilldown: {
-                name: 'Firefox versions',
-                categories: ['Firefox v31', 'Firefox v32', 'Firefox v33', 'Firefox v35', 'Firefox v36', 'Firefox v37', 'Firefox v38'],
-                data: this.props.data[1],
-                color: colors[1]
+                name: 'Supporters',
+                categories: ['Supporters'],
+                data: this.props.data[1].sort(),
+                color: 'red'
             }
         }, {
-            y: 24.03,
-            color: colors[2],
+            y: Math.random() * 13 + 1,
+            color: 'purple',
             drilldown: {
-                name: 'Chrome versions',
-                categories: ['Chrome v30.0', 'Chrome v31.0', 'Chrome v32.0', 'Chrome v33.0', 'Chrome v34.0',
-                    'Chrome v35.0', 'Chrome v36.0', 'Chrome v37.0', 'Chrome v38.0', 'Chrome v39.0', 'Chrome v40.0', 'Chrome v41.0', 'Chrome v42.0', 'Chrome v43.0'
-                    ],
-                data: this.props.data[2],
-                color: colors[2]
+                name: 'Joint',
+                categories: ['Joint'],
+                data: this.props.data[2].sort(),
+                color: 'purple',
             }
         }, {
-            y: 4.77,
-            color: colors[3],
+            y: Math.random() * 13 + 1,
+            color: 'gray',
             drilldown: {
-                name: 'Safari versions',
-                categories: ['Safari v5.0', 'Safari v5.1', 'Safari v6.1', 'Safari v6.2', 'Safari v7.0', 'Safari v7.1', 'Safari v8.0'],
-                data: this.props.data[3],
-                color: colors[3]
+                name: 'Staff',
+                categories: ['Staff'],
+                data: this.props.data[3].sort(),
+                color: 'gray'
             }
         }, {
-            y: 0.91,
-            color: colors[4],
+            y: Math.random() * 13 + 1,
+            color: 'green',
             drilldown: {
-                name: 'Opera versions',
-                categories: ['Opera v12.x', 'Opera v27', 'Opera v28', 'Opera v29'],
-                data: this.props.data[4],
-                color: colors[4]
+                name: 'Allies',
+                categories: ['Allies'],
+                data: this.props.data[4].sort(),
+                color: 'green'
             }
         }, {
-            y: 0.2,
-            color: colors[5],
+            y: Math.random() * 13 + 1,
+            color: 'yellow',
             drilldown: {
-                name: 'Proprietary or Undetectable',
-                categories: [],
-                data: this.props.data[5],
-                color: colors[5]
+                name: 'Officials',
+                categories: ['Officials'],
+                data: this.props.data[5].sort(),
+                color: 'yellow'
             }
         }],
         browserData = [],
@@ -101,7 +99,7 @@ class DonutChart extends React.Component {
             type: 'pie'
         },
         title: {
-            text: 'Browser market share, January, 2015 to May, 2015'
+            text: "Visualization of individual's scheduled hours"
         },
         subtitle: {
             text: 'Source: <a href="http://netmarketshare.com/">netmarketshare.com</a>'
@@ -139,7 +137,7 @@ class DonutChart extends React.Component {
             dataLabels: {
                 formatter: function () {
                     // display only if larger than 1
-                    return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
+                    //return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%' : null;
                 }
             }
         }]

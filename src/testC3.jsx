@@ -21,7 +21,7 @@ class TestComponent extends React.Component {
               text: 'Hours spent at events sorted by date'
           },
           subtitle: {
-              text: 'Filter event types by clicking legend at the bottom'
+              text: 'Filter and compare by clicking the legend at the bottom'
           },
           xAxis: {
               categories: this.props.date
@@ -54,36 +54,43 @@ class TestComponent extends React.Component {
               type: 'column',
               name: 'Army',
               data: this.props.data[0],
+              color: 'darkgreen',
               y: 25,
           }, {
               type: 'column',
               name: 'Supporters',
               data: this.props.data[1],
+              color: 'red',
               y:15
           },{
             type: 'column',
             name: 'NATO',
             data: this.props.data[2],
+            color: 'blue',
             y: 10
           }, {
             type: 'column',
             name: 'Joint',
             data: this.props.data[3],
+            color: 'purple',
             y: 20
           }, {
             type: 'column',
             name: 'Staff',
             data: this.props.data[4],
+            color: 'gray',
             y: 15
           }, {
             type: 'column',
             name: 'Allies',
             data: this.props.data[5],
+            color: 'green',
             y:10
           }, {
             type: 'column',
-            name: 'Allies',
+            name: 'Officials',
             data: this.props.data[6],
+            color: 'yellow',
             y: 5
           }]
       }
