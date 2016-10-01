@@ -1,4 +1,3 @@
-
 function parser(data) {
   const items = data.items;
 
