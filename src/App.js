@@ -33,38 +33,38 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <ReactCSSTransitionGroup
-                transitionName="example"
-                transitionAppear={true}
-                transitionAppearTimeout={5000}>
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-          <DropdownButton title={this.state.selectedPerson} onSelect={this.onSelectPerson} id="1337">
-            <MenuItem eventKey={'CG'} ref="dude1">CG</MenuItem>
-            <MenuItem eventKey={'COS'} ref="dude2">COS</MenuItem>
-            <MenuItem eventKey={'DCG-AR'} ref="dude3">DCG-AR</MenuItem>
-            <MenuItem eventKey={'DCG-N'} ref="dude4">DCG-N</MenuItem>
-            <MenuItem eventKey={'DCG-NG'} ref="dude5">DCG-NG</MenuItem>
-            <MenuItem eventKey={'DCG-S'} ref="dude6">DCG-S</MenuItem>
-            <MenuItem eventKey={'G3'} ref="dude7">G3</MenuItem>
-          </DropdownButton>
-          <DropdownButton title={this.state.selectedEvent} onSelect={this.onSelectEvent} id="137">
-            <MenuItem eventKey={"NATO"} ref="event1">NATO</MenuItem>
-            <MenuItem eventKey={"ALLIES"} ref="event1">ALLIES</MenuItem>
-            <MenuItem eventKey={"ARMY"} ref="event1">ARMY</MenuItem>
-            <MenuItem eventKey={"SUPPORTERS"} ref="event1">SUPPORTERS</MenuItem>
-            <MenuItem eventKey={"JOINT"} ref="event1">JOINT</MenuItem>
-            <MenuItem eventKey={"STAFF"} ref="event1">STAFF</MenuItem>
-          </DropdownButton>
-          <DropdownButton title={this.state.selectedTime} onSelect={this.onSelectTime} id="17">
-            <MenuItem eventKey={"October"} ref="time1">October</MenuItem>
-            <MenuItem eventKey={"November"} ref="time2">November</MenuItem>
-            <MenuItem eventKey={"December"} ref="time2">December</MenuItem>
-            <MenuItem eventKey={"All"} ref="time2">All</MenuItem>
-          </DropdownButton>
+        <div className="react_content_container">
+          <ReactCSSTransitionGroup
+                  transitionName="example"
+                  transitionAppear={true}
+                  transitionAppearTimeout={5000}>
+          <div className="App-header">
+            <DropdownButton title={this.state.selectedPerson} onSelect={this.onSelectPerson} id="1337">
+              <MenuItem eventKey={'CG'} ref="dude1">CG</MenuItem>
+              <MenuItem eventKey={'COS'} ref="dude2">COS</MenuItem>
+              <MenuItem eventKey={'DCG-AR'} ref="dude3">DCG-AR</MenuItem>
+              <MenuItem eventKey={'DCG-N'} ref="dude4">DCG-N</MenuItem>
+              <MenuItem eventKey={'DCG-NG'} ref="dude5">DCG-NG</MenuItem>
+              <MenuItem eventKey={'DCG-S'} ref="dude6">DCG-S</MenuItem>
+              <MenuItem eventKey={'G3'} ref="dude7">G3</MenuItem>
+            </DropdownButton>
+            <DropdownButton title={this.state.selectedEvent} onSelect={this.onSelectEvent} id="137">
+              <MenuItem eventKey={"NATO"} ref="event1">NATO</MenuItem>
+              <MenuItem eventKey={"ALLIES"} ref="event1">ALLIES</MenuItem>
+              <MenuItem eventKey={"ARMY"} ref="event1">ARMY</MenuItem>
+              <MenuItem eventKey={"SUPPORTERS"} ref="event1">SUPPORTERS</MenuItem>
+              <MenuItem eventKey={"JOINT"} ref="event1">JOINT</MenuItem>
+              <MenuItem eventKey={"STAFF"} ref="event1">STAFF</MenuItem>
+            </DropdownButton>
+            <DropdownButton title={this.state.selectedTime} onSelect={this.onSelectTime} id="17">
+              <MenuItem eventKey={"October"} ref="time1">October</MenuItem>
+              <MenuItem eventKey={"November"} ref="time2">November</MenuItem>
+              <MenuItem eventKey={"December"} ref="time2">December</MenuItem>
+              <MenuItem eventKey={"All"} ref="time2">All</MenuItem>
+            </DropdownButton>
+          </div>
+          </ReactCSSTransitionGroup>
         </div>
-        </ReactCSSTransitionGroup>
       </div>
     );
   }
