@@ -1,10 +1,19 @@
-import { C3Chart } from 'c3-react';
-import { Component } from 'react';
+import C3Chart from 'react-c3js';
+import 'c3/c3.css';
+import React from 'react';
 
-class TestChart extends Component {
+const data = {
+  type: "bar",
+  columns: [
+    ['data1', 30, 200, 100, 400, 150, 250],
+    ['data2', 50, 20, 10, 40, 15, 25]
+  ]
+};
+
+class TestChart extends React.Component {
   render() {
     return(
-      <C3Chart data="test" type="bar" />
+      <C3Chart data={data} />
     )
   }
 }
