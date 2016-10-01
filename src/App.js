@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Navbar, PageHeader, DropdownButton, MenuItem } from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import TestChart from './testC3.jsx';
 
 import logo from './logo.svg';
 import './App.css';
@@ -34,9 +35,9 @@ class App extends Component {
     return (
       <div className="App container">
         <ReactCSSTransitionGroup
-                transitionName="example"
-                transitionAppear={true}
-                transitionAppearTimeout={5000}>
+          transitionName="example"
+          transitionAppear={true}
+          transitionAppearTimeout={5000}>
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
@@ -65,6 +66,7 @@ class App extends Component {
           </DropdownButton>
         </div>
         </ReactCSSTransitionGroup>
+        <TestChart />
       </div>
     );
   }
