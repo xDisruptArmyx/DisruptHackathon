@@ -1,0 +1,733 @@
+{
+    "accessRole": "reader",
+    "defaultReminders": [],
+    "description": "personal calendar",
+    "etag": "\"p32caf3u6lqpsu0g\"",
+    "items": [
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-03T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMDNUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161003T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-03T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-03T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-06T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMDZUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161006T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-06T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-06T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-10T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMTBUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161010T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-10T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-10T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-20T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMjBUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161020T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-20T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-20T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-24T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMjRUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161024T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-24T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-24T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-27T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210377460000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMjdUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161027T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-27T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-27T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:28.730Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-13T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210399996000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMTNUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161013T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-13T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-13T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:39.998Z"
+        },
+        {
+            "created": "2016-09-28T23:26:27.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-17T11:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210413536000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=ZmZjOGJib2gzN2FjZ3FyNTQ5Y2FicGk2ODBfMjAxNjEwMTdUMjAwMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "ffc8bboh37acgqr549cabpi680@google.com",
+            "id": "ffc8bboh37acgqr549cabpi680_20161017T200000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-17T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "ffc8bboh37acgqr549cabpi680",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-17T10:00:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:26:46.768Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-05T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMDVUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161005T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-05T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-05T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-07T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMDdUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161007T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-07T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-07T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-14T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMTRUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161014T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-14T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-14T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-18T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMThUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161018T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-18T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-18T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-19T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMTlUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161019T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-19T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-19T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-25T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMjVUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161025T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-25T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-25T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-26T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210576886000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMjZUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161026T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-26T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-26T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:08.443Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-04T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210605008000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMDRUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161004T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-04T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-04T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:22.504Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-12T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210649236000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMTJUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161012T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-12T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-12T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:44.618Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-21T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210662812000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMjFUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161021T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-21T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-21T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:28:51.406Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-11T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210736626000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMTFUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161011T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-11T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-11T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:29:28.313Z"
+        },
+        {
+            "created": "2016-09-28T23:27:49.000Z",
+            "creator": {
+                "email": "disruptarmyhackathon@gmail.com"
+            },
+            "end": {
+                "dateTime": "2016-10-28T14:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "etag": "\"2950210928448000\"",
+            "htmlLink": "https://www.google.com/calendar/event?eid=dGUybHNsMmNvbWZscWNnZjdoZGliZXJyaHNfMjAxNjEwMjhUMjIzMDAwWiAyYWEzbzlhMWx1ZDN1c2lqZTFocXQzcGo3c0Bn&ctz=Pacific/Honolulu",
+            "iCalUID": "te2lsl2comflqcgf7hdiberrhs@google.com",
+            "id": "te2lsl2comflqcgf7hdiberrhs_20161028T223000Z",
+            "kind": "calendar#event",
+            "organizer": {
+                "displayName": "DCG-S",
+                "email": "2aa3o9a1lud3usije1hqt3pj7s@group.calendar.google.com",
+                "self": true
+            },
+            "originalStartTime": {
+                "dateTime": "2016-10-28T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "recurringEventId": "te2lsl2comflqcgf7hdiberrhs",
+            "reminders": {
+                "useDefault": true
+            },
+            "sequence": 0,
+            "start": {
+                "dateTime": "2016-10-28T12:30:00-10:00",
+                "timeZone": "Pacific/Honolulu"
+            },
+            "status": "confirmed",
+            "summary": "Executive Engagement",
+            "updated": "2016-09-28T23:31:04.224Z"
+        }
+    ],
+    "kind": "calendar#events",
+    "nextSyncToken": "CJinj8aus88CEJinj8aus88CGAE=",
+    "summary": "DCG-S",
+    "timeZone": "Pacific/Honolulu",
+    "updated": "2016-09-29T00:53:42.959Z"
+}
