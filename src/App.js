@@ -8,6 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.onSelectPerson = this.onSelectPerson.bind(this);
+    this.onSelectEvent = this.onSelectEvent.bind(this);
+    this.onSelectTime = this.onSelectTime.bind(this);
     this.state = {
       selectedPerson: 'Select a dude',
       selectedEvent: 'Select an event',
@@ -43,12 +45,12 @@ class App extends Component {
             <MenuItem eventKey={'Dude 7'} ref="dude7">Dude 7</MenuItem>
           </DropdownButton>
           <DropdownButton title={this.state.selectedEvent} onSelect={this.onSelectEvent} id="137">
-            <MenuItem eventKey="Event 1" ref="event1">This Event</MenuItem>
-            <MenuItem eventKey="Event 2" ref="event1">That Event</MenuItem>
+            <MenuItem eventKey={"Event 1"} ref="event1">This Event 1</MenuItem>
+            <MenuItem eventKey={"Event 2"} ref="event1">That Event 2</MenuItem>
           </DropdownButton>
           <DropdownButton title={this.state.selectedTime} onSelect={this.onSelectTime} id="17">
-            <MenuItem eventKey="Time range 1" ref="time1">Time Range 1</MenuItem>
-            <MenuItem eventKey="Time range 2" ref="time2">Time Range 2</MenuItem>
+            <MenuItem eventKey={"Time range 1"} ref="time1">Time Range 1</MenuItem>
+            <MenuItem eventKey={"Time range 2"} ref="time2">Time Range 2</MenuItem>
           </DropdownButton>
         </div>
       </div>
