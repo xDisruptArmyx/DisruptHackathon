@@ -1,31 +1,12 @@
 const React = require('react');
-const ReactDOM = require('react-dom');
 import parser from './script.js';
 import G3 from '../data/G3.js';
-import CG from '../data/CG.js';
-import COS from '../data/COS.js';
-import DCGAR from '../data/DCGAR.js';
-import DCGN from '../data/DCGN.js';
-import DCGNG from '../data/DCGNG.js';
-import DCGS from '../data/DCGS.js';
 import hoursBySummary from './hoursBySummary.js';
 
 const ReactHighcharts = require('react-highcharts');
 
 var G3data = parser(G3());
-var CGdata = parser(CG());
-var COSdata = parser(COS());
-var DCGARdata = parser(DCGAR());
-var DCGNdata = parser(DCGN());
-var DCGNGdata = parser(DCGNG());
-var DCGSdata = parser(DCGS());
 
-var DCGS_hours = hoursBySummary(DCGSdata);
-var DCGNG_hours = hoursBySummary(DCGNGdata);
-var DCGN_hours = hoursBySummary(DCGNdata);
-var DCGAR_hours = hoursBySummary(DCGARdata);
-var COS_hours = hoursBySummary(COSdata);
-var CG_hours = hoursBySummary(CGdata);
 var G3_hours = hoursBySummary(G3data);
 
 const donutGENERATOR = function(){
@@ -137,7 +118,7 @@ const donutGENERATOR = function(){
             text: 'G3'
         },
         subtitle: {
-            text: 'dees guy'
+            text: 'Total Hours'
         },
         plotOptions: {
             pie: {
