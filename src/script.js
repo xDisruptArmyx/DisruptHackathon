@@ -1,3 +1,5 @@
+const data = require('./../data/G3');
+console.log(parser(data)[0]);
 function parser(data) {
   const items = data.items;
 

@@ -2361,3 +2361,4 @@ const G3 = {
     }
   ]
 }
+module.exports = G3;
