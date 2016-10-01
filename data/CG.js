@@ -2355,4 +2355,4 @@ const CG = function(){
   return data;
 }
 
-module.exports=CG;
+module.exports = CG;

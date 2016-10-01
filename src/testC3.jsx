@@ -5,73 +5,95 @@ import G3 from '../data/G3.js';
 
 const ReactHighcharts = require('react-highcharts');
 
-var data = parser(G3());
-console.log(data);
- const config = {
-  title: {
-            text: 'Combination chart'
-        },
-        xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Bananas', 'Plums']
-        },
-        labels: {
-            items: [{
-                html: 'Total fruit consumption',
-                style: {
-                    left: '50px',
-                    top: '18px',
-                    // color: (ReactHighcharts.theme && ReactHighcharts.theme.textColor) || 'blue'
-                }
-            }]
-        },
-        series: [{
-            type: 'column',
-            name: 'Jane',
-            data: [3, 2, 1, 3, 4]
-        }, {
-            type: 'column',
-            name: 'John',
-            data: [2, 3, 5, 7, 6]
-        }, {
-            type: 'column',
-            name: 'Joe',
-            data: [4, 3, 3, 9, 0]
-        }, {
-            type: 'spline',
-            name: 'Average',
-            data: [3, 2.67, 3, 6.33, 3.33],
-            marker: {
-                lineWidth: 2,
-                lineColor: 'pink',
-                fillColor: 'white'
-            }
-        }, {
-            type: 'pie',
-            name: 'Total consumption',
-            data: [{
-                name: 'Jane',
-                y: 13,
-                // color: ReactHighcharts.getOptions().colors[0] // Jane's color
-            }, {
-                name: 'John',
-                y: 23,
-                // color: ReactHighcharts.getOptions().colors[1] // John's color
-            }, {
-                name: 'Joe',
-                y: 19,
-                // color: ReactHighcharts.getOptions().colors[2] // Joe's color
-            }],
-            center: [100, 80],
-            size: 100,
-            showInLegend: false,
-            dataLabels: {
-                enabled: false
-            }
-        }]
-      }
 
 class TestComponent extends React.Component {
   render() {
+   const config = {
+    chart: {
+              type: this.props.chart,
+              options3d: {
+                  enabled: true,
+                  alpha: 45
+              }
+          },
+
+          title: {
+              text: 'Hours spent at events sorted by date'
+          },
+          subtitle: {
+              text: 'Filter and compare by clicking the legend at the bottom'
+          },
+          xAxis: {
+              categories: this.props.date
+          },
+          yAxis: {
+              title: {
+                  text: 'Hours'
+              }
+          },
+          plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+
+                      }
+                    }
+                  },
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+          },
+          series: [{
+              type: 'column',
+              name: 'Army',
+              data: this.props.data[0],
+              color: 'darkgreen',
+              y: 25,
+          }, {
+              type: 'column',
+              name: 'Supporters',
+              data: this.props.data[1],
+              color: 'red',
+              y:15
+          },{
+            type: 'column',
+            name: 'NATO',
+            data: this.props.data[2],
+            color: 'blue',
+            y: 10
+          }, {
+            type: 'column',
+            name: 'Joint',
+            data: this.props.data[3],
+            color: 'purple',
+            y: 20
+          }, {
+            type: 'column',
+            name: 'Staff',
+            data: this.props.data[4],
+            color: 'gray',
+            y: 15
+          }, {
+            type: 'column',
+            name: 'Allies',
+            data: this.props.data[5],
+            color: 'green',
+            y:10
+          }, {
+            type: 'column',
+            name: 'Officials',
+            data: this.props.data[6],
+            color: 'yellow',
+            y: 5
+          }]
+      }
     return(
       <ReactHighcharts config={config} />
     )
