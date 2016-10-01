@@ -59,7 +59,7 @@ module.exports = {
     // This does not produce a real file. It's just the virtual path that is
     // served by WebpackDevServer in development. This is the JS bundle
     // containing code from all our entry points, and the Webpack runtime.
-    filename: 'static/js/bundle.js',
+    filename: '../public/bundle.js',
     // This is the URL that app is served from. We use "/" in development.
     publicPath: publicPath
   },
@@ -81,7 +81,7 @@ module.exports = {
       'react-native': 'react-native-web'
     }
   },
-  
+
   module: {
     // First, run the linter.
     // It's important to do this before Babel processes the JS.
@@ -99,7 +99,7 @@ module.exports = {
         include: paths.appSrc,
         loader: 'babel',
         query: {
-          
+
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/react-scripts/
           // directory for faster rebuilds. We use findCacheDir() because of:
@@ -146,7 +146,7 @@ module.exports = {
       }
     ]
   },
-  
+
   // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
