@@ -50,6 +50,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "react": "^15.3.2",
+    "react-bootstrap": "^0.30.3",
     "react-dom": "^15.3.2"
   },
   "scripts": {
