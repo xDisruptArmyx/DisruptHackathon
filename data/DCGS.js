@@ -2351,3 +2351,4 @@ const DCGS = {
     }
   ]
 }
+module.exports = DCGS;

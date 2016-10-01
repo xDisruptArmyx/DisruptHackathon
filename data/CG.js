@@ -2351,3 +2351,5 @@ const CG = {
     }
   ]
 }
+
+module.exports = CG;

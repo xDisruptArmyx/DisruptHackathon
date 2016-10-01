@@ -2351,3 +2351,4 @@ const COS = {
     }
   ]
 }
+module.exports = COS;

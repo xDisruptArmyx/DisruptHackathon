@@ -2351,3 +2351,4 @@ const DCGAR = {
     }
   ]
 }
+module.exports = DCGAR;

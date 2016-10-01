@@ -2351,3 +2351,4 @@ const DCGN = {
     }
   ]
 }
+module.exports = DCGN;
