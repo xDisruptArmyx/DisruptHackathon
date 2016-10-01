@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Navbar, PageHeader, DropdownButton, MenuItem } from 'react-bootstrap';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import TestChart from './testC3.jsx';
+import TestChart2 from './donut.jsx';
 
 import logo from './logo.svg';
 import './App.css';
@@ -64,6 +66,8 @@ class App extends Component {
             </DropdownButton>
           </div>
           </ReactCSSTransitionGroup>
+        <TestChart />
+        <TestChart2 />
         </div>
       </div>
     );
