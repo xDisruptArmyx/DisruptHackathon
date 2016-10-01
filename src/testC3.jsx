@@ -10,8 +10,13 @@ class TestComponent extends React.Component {
   render() {
    const config = {
     chart: {
-              type: this.props.chart
+              type: this.props.chart,
+              options3d: {
+                  enabled: true,
+                  alpha: 45
+              }
           },
+
           title: {
               text: 'Hours spent at events sorted by date'
           },
@@ -27,44 +32,61 @@ class TestComponent extends React.Component {
               }
           },
           plotOptions: {
-              line: {
-                  dataLabels: {
-                      enabled: true
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+
+                      }
+                    }
                   },
-                  enableMouseTracking: false
-              }
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
           },
           series: [{
               type: 'column',
               name: 'Army',
-              data: this.props.data[0]
+              data: this.props.data[0],
+              y: 25,
           }, {
               type: 'column',
               name: 'Supporters',
-              data: this.props.data[1]
+              data: this.props.data[1],
+              y:15
           },{
             type: 'column',
             name: 'NATO',
-            data: this.props.data[2]
+            data: this.props.data[2],
+            y: 10
           }, {
             type: 'column',
             name: 'Joint',
-            data: this.props.data[3]
+            data: this.props.data[3],
+            y: 20
           }, {
             type: 'column',
             name: 'Staff',
-            data: this.props.data[4]
+            data: this.props.data[4],
+            y: 15
           }, {
             type: 'column',
             name: 'Allies',
-            data: this.props.data[5]
+            data: this.props.data[5],
+            y:10
           }, {
             type: 'column',
             name: 'Allies',
-            data: this.props.data[6]
+            data: this.props.data[6],
+            y: 5
           }]
       }
-      console.log(this.props);
     return(
       <ReactHighcharts config={config} />
     )

@@ -11,9 +11,12 @@ import DCGAR from '../data/DCGAR.js';
 import DCGN from '../data/DCGN.js';
 import DCGNG from '../data/DCGNG.js';
 import DCGS from '../data/DCGS.js';
+import donutParser from './DonutParser.js';
+import DonutChart from './DonutChart.jsx';
 
 import logo from './logo.svg';
 import './App.css';
+
 
 class App extends Component {
   constructor() {
@@ -22,12 +25,14 @@ class App extends Component {
     this.onSelectChart = this.onSelectChart.bind(this);
     this.onSelectTime = this.onSelectTime.bind(this);
     this.filter = this.filter.bind(this);
+    this.initialLoad = this.initialLoad.bind(this);
     this.state = {
-      selectedPerson: 'Select a person',
-      selectedChart: 'Select an chart',
-      selectedTime: 'Time Range',
+      selectedPerson: 'Select Person',
+      selectedChart: 'Select Chart',
       data: '',
       renderChart: false,
+      renderDonut: false,
+      firstLoad: true,
     }
   }
 
@@ -45,29 +50,102 @@ class App extends Component {
 
   filter(){
     let data;
-    if(this.state.selectedPerson === 'CG'){
+    if(this.state.selectedChart === 'donut') {
+      if(this.state.selectedPerson === 'CG') {
+        data = CG;
+      } else if(this.state.selectedPerson === 'COS'){
+      data = COS;
+      } else if(this.state.selectedPerson === 'DCG-AR'){
+        data = DCGAR;
+      } else if(this.state.selectedPerson === 'DCG-N'){
+      data = DCGN;
+      } else if(this.state.selectedPerson === 'DCG-NG'){
+        data = DCGNG;
+      } else if(this.state.selectedPerson === 'G3'){
+        data = G3();
+      } else if(this.state.selectedPerson === 'DCG-S'){
+        data = DCGS;
+      }
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      let parsedDonutData = donutParser(parsedData.dataArray);
+      this.setState({ data: {donutData: parsedDonutData} });
+      this.setState({ initialLoad: false });
+      this.setState({ renderChart: false });
+      this.setState({ renderDonut: true });
+    }
+    else if(this.state.selectedPerson === 'CG'){
       data = CG;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'COS'){
-      data = COS
+      data = COS;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'DCG-AR'){
       data = DCGAR;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'DCG-N'){
       data = DCGN;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'DCG-NG'){
-      data = DCGNG
+      data = DCGNG;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'G3'){
       data = G3();
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     } else if(this.state.selectedPerson === 'DCG-S'){
       data = DCGS;
+      let firstParse = parser(data);
+      let parsedData = dataParser(firstParse);
+      this.setState({ data: parsedData });
+      this.setState({ firstLoad: false });
+      this.setState({ renderChart: true });
+      this.setState({ renderDonut: false });
     }
-    let firstParse = parser(data);
+  }
+
+
+  initialLoad(){
+    let firstParse = parser(COS);
+    console.log(firstParse, 'first parse')
     let parsedData = dataParser(firstParse);
-    this.setState({ data: parsedData })
-    this.setState({ renderChart: true })
+    console.log(parsedData, 'parsedData')
+    return(
+      <TestChart data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
+    )
   }
 
   render() {
-    let parsedData;
+    console.log(this.state.renderDonut)
     return (
       <div className="App container">
         <div className="react_content_container">
@@ -86,19 +164,34 @@ class App extends Component {
               <MenuItem eventKey={'G3'} ref="dude7">G3</MenuItem>
             </DropdownButton>
             <DropdownButton title={this.state.selectedChart} onSelect={this.onSelectChart} id="137">
-              <MenuItem eventKey={"line"} ref="event1">Line</MenuItem>
+              <MenuItem eventKey={"donut"} ref="event1">Donut</MenuItem>
               <MenuItem eventKey={"bar"} ref="event1">Bar</MenuItem>
-              <MenuItem eventKey={"area"} ref="event1">Area</MenuItem>
-              <MenuItem eventKey={"columnrange"} ref="event1">Column Rage</MenuItem>
+              <MenuItem eventKey={"line"} ref="event1">Line</MenuItem>
+              <MenuItem eventKey={"Columnrange"} ref="event1">Column Rage</MenuItem>
               <MenuItem eventKey={"Combination chart"} ref="event1">Combination Chart</MenuItem>
-              <MenuItem eventKey={"bubble"} ref="event1">Bubble</MenuItem>
+              <MenuItem eventKey={"Bubble"} ref="event1">Bubble</MenuItem>
             </DropdownButton>
             <Button bsStyle="info" onClick={this.filter}>Filter</Button>
           </div>
+          <div>
           { this.state.renderChart ?
             <TestChart data={this.state.data.dataArray} date={this.state.data.dateArray} chart={this.state.selectedChart}/>
             : null
           }
+          </div>
+          <div>
+          {
+            this.state.renderDonut ?
+            <DonutChart data={this.state.data.donutData} />
+            : null
+          }
+          </div>
+          <div>
+            {this.state.firstLoad ?
+              this.initialLoad()
+              : null
+            }
+          </div>
           </ReactCSSTransitionGroup>
         </div>
       </div>
