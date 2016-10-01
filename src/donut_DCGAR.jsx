@@ -105,7 +105,6 @@ const donutGENERATOR = function(){
     }
   }
   let result_DCGAR = finisherFunc(DCGAR_hours);
-  console.log(result_DCGAR,'<----result_DCGAR');
 
   return {
         chart: {

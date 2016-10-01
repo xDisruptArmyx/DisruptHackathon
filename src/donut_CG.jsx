@@ -6,9 +6,7 @@ import hoursBySummary from './hoursBySummary.js';
 const ReactHighcharts = require('react-highcharts');
 
 var CGdata = parser(CG());
-
 var CG_hours = hoursBySummary(CGdata);
-
 const donutGENERATOR = function(){
   var arrSummHoursByNato = [];
   var arrSummHoursByNavy = [];
@@ -78,7 +76,7 @@ const donutGENERATOR = function(){
 
   const staffHoursPerPerson = function(data){
     theeData = data.filter((el,index)=>{
-      if(el.summary === 'staff'){
+      if(el.summary === 'staff') {
         arrSummHoursByStaff.push(el.hours);
       }
     });
@@ -105,7 +103,6 @@ const donutGENERATOR = function(){
     }
   }
   let result_CG = finisherFunc(CG_hours);
-  console.log(result_CG,'<----result_CG');
 
   return {
         chart: {
@@ -144,13 +141,12 @@ const donutGENERATOR = function(){
 };
 let config_CG = donutGENERATOR();
 
-
 class TestComponent8 extends React.Component {
   render() {
-    return(
+    return (
       <ReactHighcharts config={config_CG} />
     )
   }
 }
 
-export default TestComponent8
+export default TestComponent8;

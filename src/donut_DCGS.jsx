@@ -147,7 +147,6 @@ let config_DCGS = donutGENERATOR();
 
 class TestComponent2 extends React.Component {
   render() {
-    console.log(config_DCGS,'<----config_DCGS');
     return(
       <ReactHighcharts config={config_DCGS} />
     )

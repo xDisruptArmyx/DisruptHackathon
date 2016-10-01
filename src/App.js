@@ -62,9 +62,8 @@ class App extends Component {
   filter(){
     let data;
     if(this.state.selectedChart === 'pie'){
+
       this.setState({ mattChart: true });
-      this.setState({ renderDonut: false });
-      this.setState({ renderChart: false});
     } else if(this.state.selectedChart === 'donut') {
       if(this.state.selectedPerson === 'CG') {
         data = CG();
@@ -164,38 +163,40 @@ class App extends Component {
   }
 
   renderMattChart(){
-    this.setState({ renderChart: false });
-    this.setState({ renderDonut: false });
+    // let mattDiv = document.getElementById('mattDiv');
+
     if(this.state.selectedPerson === 'CG'){
-      return <TestChart8 />
+      // this.setState({firstLoad: false})
+      // this.setState({ renderChart: false });
+      // this.setState({ renderDonut: false });
+      // this.setState({ renderDonut: false });
+      return (<TestChart8 />)
     } else if(this.state.selectedPerson ==='COS'){
-      return <TestChart7 />
+      // return (<TestChart7 />)
     } else if(this.state.selectedPerson === 'DCG-AR') {
-      return <TestChart6 />
+      // return (<TestChart6 />)
     } else if(this.state.selectedPerson === 'DCG-N') {
-      return <TestChart5 />
+      // return <TestChart5 />
     } else if(this.state.selectedPerson === 'DCG-NG') {
-      return <TestChart3 />
+      // return <TestChart3 />
     } else if(this.state.selectedPerson === 'DCG-S') {
-      return <TestChart2 />
+      // return <TestChart2 />
     } else if(this.state.selectedPerson === 'G3') {
-      return <TestChart4 />
+      // return <TestChart4 />
     }
-  }
+
+   }
 
 
   initialLoad(){
     let firstParse = parser(COS());
-    console.log(firstParse, 'first parse')
     let parsedData = dataParser(firstParse);
-    console.log(parsedData, 'parsedData')
     return(
       <TestComponent data={parsedData.dataArray} date={parsedData.dateArray} chart="Combined chart" />
     )
   }
 
   render() {
-    console.log(this.state.renderDonut)
     return (
       <div className="App container">
         <div className="react_content_container">
@@ -218,7 +219,6 @@ class App extends Component {
               <MenuItem eventKey={"bar"} ref="event1">Bar</MenuItem>
               <MenuItem eventKey={"line"} ref="event1">Line</MenuItem>
               <MenuItem eventKey={"donut"} ref="event1">Donut</MenuItem>
-              <MenuItem eventKey={"pie"} ref="event1">Pie</MenuItem>
             </DropdownButton>
             <Button bsStyle="info" onClick={this.filter}>Filter</Button>
           </div>

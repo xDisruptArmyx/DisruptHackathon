@@ -50,6 +50,7 @@ const hoursBySummary = function(data){
       };
     }
   });
+  console.log(dataBySummary + 'DATA BY SUMMARY')
   return dataBySummary;
 }
 
